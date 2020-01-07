@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сети Петри</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="Site_main.html">
+              <img src="images/Логотип-картинка.png" alt="На главную">
+          </a>
+        </div>
+        <ul>
+            <li>
+                <a href="Osobennosti.html">Особенности сети Петри и области их применения</a>
+            </li>
+            <li>
+                <a href="SposobiZadani.html">Основные определения. Способы задания сети Петри</a>
+            </li>
+            <li>
+                <a href="Functionir.html">Функционирование сетей Петри</a>
+            </li>
+            <li>
+                <a href="Svoistva.html">Свойства сетей Петри</a>
+            </li>
+            <li>
+                <a href="Analysis.html">Анализ сетей Петри</a>
+            </li>
+        </ul>
+    </header>
+    <section class="content">
+        <div class="article">
+            <div class="content__article">
+                <div class="title">Анализ сетей Петри</div>
+                <div class="content__text">
+                  Основная задача анализа сетей Петри – задача достижимости: достижима ли маркировка μ' из начальной маркировки μ0 данной сети Петри. <br>
+Первый основан на построении дерева достижимости. Дерево достижимости – это ориентированное корневое дерево, вершинам которого, соответствуют возможные маркировки, а дугам – переходы. <br>
+Начальная маркировка соответствует корню дерева. Из него исходят дуги, соответствующие разрешенным переходам. <br>
+На каждом шаге строится очередной ярус дерева. Дерево представляет все возможные последовательности запусков переходов. Всякий путь, начинающийся в корне, соответствует допустимой последовательности переходов. <br>
+<img src="images/ANAL_1.png" alt="picture"> <br>
+Другой подход к анализу сетей Петри называется матричным и основан на их матричном представлении.
+Пусть осуществляется последовательность срабатываний переходов
+<img class="article_img" src="images/ANAL_2.png" alt="picture"> <br>
+В результате получится маркировка <br>
+<img src="images/ANAL_3.png" alt="picture"> <br>
+<img class="article_img" src="images/ANAL_4.png" alt="picture"> – вектор целых положительных чисел, r-й элемент которого показывает сколько раз сработал переход tir в цепочке срабатываний, переводящей из μ0  в μ‘. <br>
+Для того чтобы существовала последовательность срабатываний σ, которая приводит из  μ0  в  μ', необходимо, чтобы вектор f(σ) являлся неотрицательным целым решением матричного уравнения <br>
+<img src="images/ANAL_5.png" alt="picture"> <br>
+Если это уравнение не имеет решений, разметка μ' является недостижимой на данной сети из μ0. <br>
+Недоcтатки матричного анализа в том, что вектор срабатывания f(σ) не дает информации о порядке срабатывания переходов, кроме того, возможны недействительные решения уравнения, т. е. получаем некоторую последовательность переходов, которая не возможна.
+
+
+                </div>
+            </div>
+            <div class="content__img"><img src="" alt=""></div>
+        </div>
+        <footer class="footer">
+            <div class="main__footer">
+                <div class="rights">© all rights reserved</div>
+                <div class="gmail">asbuuyazero@gmail.com</div>
+                <div class="phone">+79248249755</div>
+            </div>
+            <div class="author__footer"><a href="Ya.html">Об авторе</a></div>
+        </footer>
+    </section>
+</body>
+
+</html>

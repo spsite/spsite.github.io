@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сети Петри</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="Site_main.html">
+              <img src="images/Логотип-картинка.png" alt="На главную">
+          </a>
+        </div>
+        <ul>
+            <li>
+                <a href="Osobennosti.html">Особенности сети Петри и области их применения</a>
+            </li>
+            <li>
+                <a href="SposobiZadani.html">Основные определения. Способы задания сети Петри</a>
+            </li>
+            <li>
+                <a href="Functionir.html">Функционирование сетей Петри</a>
+            </li>
+            <li>
+                <a href="Svoistva.html">Свойства сетей Петри</a>
+            </li>
+            <li>
+                <a href="Analysis.html">Анализ сетей Петри</a>
+            </li>
+        </ul>
+    </header>
+    <section class="content">
+        <div class="article">
+            <div class="content__article none">
+                <div class="title">Свойства сетей Петри:</div>
+                <div class="content__text">
+                    <ul>
+                        <li> <strong>Ограниченность.</strong> <br>
+                          Это свойство связано с введением ограничений на число меток в позициях.
+  Позиция pi называется k-ограниченной, если количество фишек в ней не может превышать целого числа k, т. е.
+  Сеть Петри называется ограниченной, если все ее позиции ограничены.
+ </li>
+                        <li> <strong>Безопасность.</strong> <br>
+                        Позиция сети Петри называется безопасной, если число фишек в ней никогда не превышает единицы. Сеть Петри безопасна, если безопасны все ее позиции. Это свойство важно при интерпретации позиций как простых условий: если в позиции есть фишка, то условие выполняется, если нет, то не выполняется. Безопасную позицию можно реализовать одним триггером. </li>
+                        <li> <strong>Сохраняемость.</strong> <br>
+                        Сеть Петри С = (P, T, F, H, μ0) называется строго сохраняющей, если сумма фишек по всем позициям остается строго постоянной в процессе выполнения сети, т. е. для всех возможных маркировок μ' <img src="images/FUNC_4.png" alt="picture"> </li>
+                        <li> <strong>Живость.</strong> <br>
+                        Под живостью перехода ti понимают принципиальную возможность его срабатывания при функционировании сети Петри. Тупик в сети Петри – это переход (или множество переходов), который в имеющейся маркировке μ' и в последующих достижимых из μ' маркировках не разрешен.</li>
+                        <li> <strong>Достижимость.</strong> <br>
+                          Свойство достижимости используется при установлении возможности возникновения некоторой ситуации в системе.
+  Пусть проверяемая ситуация описывается разметкой μ'. Возникает задача: достижима ли маркировка μ' из начальной маркировки μ0 данной сети Петри.
+  Задача достижимости является одной из наиболее важных задач анализа сетей Петри.
+ </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content__img"><img src="" alt=""></div>
+        </div>
+        <footer class="footer">
+            <div class="main__footer">
+                <div class="rights">© all rights reserved</div>
+                <div class="gmail">asbuuyazero@gmail.com</div>
+                <div class="phone">+79248249755</div>
+            </div>
+            <div class="author__footer"><a href="Ya.html">Об авторе</a></div>
+        </footer>
+    </section>
+</body>
+
+</html>

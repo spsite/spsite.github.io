@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Сети Петри</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+          <a href="Site_main.html">
+              <img src="images/Логотип-картинка.png" alt="На главную">
+          </a>
+        </div>
+        <ul>
+            <li>
+                <a href="Osobennosti.html">Особенности сети Петри и области их применения</a>
+            </li>
+            <li>
+                <a href="SposobiZadani.html">Основные определения. Способы задания сети Петри</a>
+            </li>
+            <li>
+                <a href="Functionir.html">Функционирование сетей Петри</a>
+            </li>
+            <li>
+                <a href="Svoistva.html">Свойства сетей Петри</a>
+            </li>
+            <li>
+                <a href="Analysis.html">Анализ сетей Петри</a>
+            </li>
+        </ul>
+    </header>
+    <section class="content">
+        <div class="article">
+            <div class="content__article">
+                <div class="title">Основные определения. Способы задания сети Петри</div>
+                <div class="content__text">
+                  Сеть Петри – это двудольный ориентированный мультиграф, все множество X вершин которого разбито на два класса так, что дуги соединяют вершины только из разных классов.
+
+При моделировании отражаются два аспекта систем: события и условия.
+
+Возможность наступления событий обеспечивается выполнением определенных условий.
+
+Условиям соответствуют позиции сети Петри, а событиям, происходящим в системе, соответствуют переходы.
+
+Для представления динамики функционирования позициям могут присваиваться фишки, которые изображаются точками внутри вершин-позиций.
+
+Присвоение фишек позициям сети Петри называется маркировкой, или разметкой.
+
+Сети Петри функционируют, переходя от одной маркировки к другой.
+<img src="images/Sposobi_Zad_1.png" alt=picture> <br>
+Графическое представление сети Петри:
+<img src="images/Graph_SETI.png" alt="picture"> <br>
+Множество позиций                           P = {p1, p2, p3, p4} <br>
+ Множество переходов                              T = {t1, t2, t3 } <br>
+Начальная маркировка сети обозначается вектором <img class="article_img" src="images/MEOW.png" alt="picture"> <br>
+<img class="article_img" src="images/Sposobi_Zad_2.png" alt="picture">
+- определяют для каждой позиции p i-того количество фишек в этой позиции. <br>
+Как и любой граф, сеть Петри может быть задана графическим, аналитическим и матричным способами.
+<p>При аналитическом способе сеть Петри задается как C = (P,T,F,H,μ0), где, кроме множеств позиций Р и переходов Т, задаются входная F и выходная Н функции. <br>
+Через F(tj) обозначается множество входных позиций, а через H(tj) – множество выходных позиций перехода t j-тое; μ0 – начальная маркировка сети.
+</p>
+<p>Матричная форма определения сети Петри эквивалентна аналитическому способу задания C = (P,T,D–,D+,μ0). Здесь D– и D+  – матрицы входных и выходных инциденций соответственно размером m × n, где m – число переходов и  n – число позиций.
+Элемент d i-тое j-тое – матрицы D– равен кратности дуг, входящих в i-й переход из j-й позиции.
+</p>
+<p>Элемент d i-тое j-тое+ матрицы D+ равен кратности дуг, выходящих из i-гo перехода в j-ю позицию</p>
+<img src="images/Sposobi_Zad_3.png" alt="picture">
+                </div>
+            </div>
+            <div class="content__img"><img src="" alt=""></div>
+        </div>
+        <footer class="footer">
+            <div class="main__footer">
+                <div class="rights">© all rights reserved</div>
+                <div class="gmail">asbuuyazero@gmail.com</div>
+                <div class="phone">+79248249755</div>
+            </div>
+            <div class="author__footer"><a href="Ya.html">Об авторе</a></div>
+        </footer>
+    </section>
+</body>
+
+</html>
